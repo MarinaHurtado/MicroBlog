@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: Uno
+  created_at: <%= 10.minutes.ago %>
+
+two:
+  content: Dos
+  created_at: <%= 5.minutes.ago %>
+
+three:
+  content: Tres
+  created_at: <%= 15.minutes.ago %>
