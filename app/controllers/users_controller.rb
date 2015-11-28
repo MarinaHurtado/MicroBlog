@@ -2,12 +2,13 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index]
   
   def index
-    # blah.com/users?page=3
+    # tuiter.com/users?page=3
     @users = User.paginate(page: params[:page])
   end
   
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
   
   def new
